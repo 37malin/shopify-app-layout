@@ -1,0 +1,27 @@
+# fly.toml app configuration file generated for layout on 2024-03-25T10:23:32+11:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'layout'
+primary_region = 'syd'
+
+[build]
+
+[env]
+  PORT = "8081"
+  SHOPIFY_APP_URL = "https://layout.fly.dev"
+  SHOPIFY_API_KEY = "c1e5bb5ae782d88ff9466effa8b48498"
+  SCOPES = "write_products"
+
+[[services]]
+  internal_port = 8081
+  
+[[services.ports]]
+  handlers = ["http"]
+  port = 80
+  force_https = true  # optional
+  
+[[services.ports]]
+  handlers = ["tls", "http"]
+  port = "443"

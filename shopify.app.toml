@@ -3,7 +3,7 @@
 client_id = "c1e5bb5ae782d88ff9466effa8b48498"
 name = "layout-extention"
 handle = "layout-extention"
-application_url = "https://alike-novel-introductory-closes.trycloudflare.com"
+application_url = "https://layout.fly.dev"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://alike-novel-introductory-closes.trycloudflare.com/auth/callback",
-  "https://alike-novel-introductory-closes.trycloudflare.com/auth/shopify/callback",
-  "https://alike-novel-introductory-closes.trycloudflare.com/api/auth/callback"
+  "https://layout.fly.dev/auth/callback",
+  "https://layout.fly.dev/auth/shopify/callback",
+  "https://layout.fly.dev/api/auth/callback"
 ]
 
 [webhooks]
